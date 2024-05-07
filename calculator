@@ -1,0 +1,41 @@
+def addition(number1,number2):
+    return number1+number2
+def subtraction(number1,number2):
+    return  number1-number2
+def multiplication(number1,number2):
+    return number1*number2
+def division(number1,number2):
+    return number1/number2
+
+print("----------welcome to calculater------------")
+print("Please Select The Operation")
+print("1.additional\n"\
+      "2.subtraction\n"\
+      "3.mutliplication\n"\
+      "4.division\n")
+
+while True:
+    operation=float(input("Enter the operation from 1,2,3,4:"))
+    num1=int(input("Enter The First Number:"))
+    num2=int(input("Enter The Second Number:"))
+
+    if operation == 1:
+        print(num1,"+",num2,"=",addition(num1,num2))
+    elif operation == 2:
+        print(num1,"-",num2,"=",subtraction(num1,num2))
+    elif operation == 3:
+        print(num1,"*",num2,"=",multiplication(num1,num2))
+    elif operation == 4:
+        print(num1,"/",num2,"=",division(num1,num2))
+    else:
+        print("invalid")
+
+    next=input("next calculation?(yes/no):")
+    if next=="no":
+      break
+    else:
+        continue
+    
+
+    
+
